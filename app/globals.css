@@ -14,11 +14,8 @@
 }
 
 .swiper-slide img {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  width: 100%;
 }
 
 .swiper-pagination-bullet {
