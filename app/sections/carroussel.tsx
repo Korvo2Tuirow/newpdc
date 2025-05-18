@@ -29,7 +29,7 @@ export const Carrousel = () => {
 
   return (
    
-      <div className="bg-gray-100 flex items-center justify-center w-screen h-[500px] mx-auto mt-5">
+      <div className="bg-gray-100 pb-10">
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
