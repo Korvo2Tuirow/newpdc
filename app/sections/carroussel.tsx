@@ -8,6 +8,9 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
+import Image from "next/image";
+import h1img from "@/public/image/imgCarrousel/h01.jpg";
+import h2img from "@/public/image/imgCarrousel/h03.jpg";
 import "../globals.css";
 
 // import required modules
@@ -15,10 +18,8 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export const Carrousel = () => {
   const imagens = [
-    "/image/imgCarrousel/h01.jpg",
-    "/image/imgCarrousel/h05.jpg",
-    "/image/imgCarrousel/h03.jpg",
-    "/image/imgCarrousel/h04.jpg",
+   h1img,
+   h2img
   ];
 
    const pagination = {
@@ -47,33 +48,13 @@ export const Carrousel = () => {
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-          <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
+        
+               {imagens.map((imagem, index) => (
+              <SwiperSlide key={index}>
+                <Image src={imagem} alt="" />
+              </SwiperSlide>
+            ))}
+          
           
           </Swiper>
       </>
