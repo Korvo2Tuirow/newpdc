@@ -1,4 +1,9 @@
+"use client";
 import { Header } from './sections/header';
+
+import React from 'react';
+
+import { Carrousel } from './sections/carroussel';
 
 export default function Home() {
   return (
@@ -9,7 +14,7 @@ export default function Home() {
           🍔🔥 Bem-vindo ao Point do Canal – O Sabor que Conquista!
         </div>
 
-        <div className="p-8  flex  w-screen text-2xl text-center text-gray-600 w-screen  max-w-[1500px]">
+        <div className="p-8  flex  w-screen text-2xl text-center text-gray-600 w-screen  max-w-[1200px]">
           Se você busca hambúrgueres suculentos com pão de fabricação própria,
           pastéis crocantes, caldos irresistíveis e aquele açaí cremoso para
           refrescar o dia, você está no lugar certo! 😍 Aqui, cada detalhe faz a
@@ -21,6 +26,8 @@ export default function Home() {
           pedido agora mesmo!
         </div>
       </div>
+
+     <Carrousel/>
    </>
-  );
+  )
 }

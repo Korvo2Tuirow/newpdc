@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/public/image/NewLogoPdC.png";
+import logo from "@/public/image/logo/NewLogoPdC.png";
 import React from "react";
 
 export const Header = () => {
