@@ -1,15 +1,15 @@
 "use client";
-import { Header } from './sections/header';
+import React from "react";
 
-import React from 'react';
+import { Header } from "./sections/header";
 
-import { Carrousel } from './sections/carroussel';
+import { Carrousel } from "./sections/carroussel";
 
 export default function Home() {
   return (
-   <>
-   <Header />
-         <div className="flex flex-col items-center justify-center ">
+    <>
+      <Header />
+      <div className="flex flex-col items-center justify-center ">
         <div className="p-8 mt-5 text-3xl font-bold flex justify-center text-center  w-screen max-w-[1000px] text-gray-700">
           🍔🔥 Bem-vindo ao Point do Canal – O Sabor que Conquista!
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-     <Carrousel/>
-   </>
-  )
+      <Carrousel />
+    </>
+  );
 }
