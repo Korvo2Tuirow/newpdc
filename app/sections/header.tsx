@@ -4,7 +4,7 @@ import logo from "@/public/image/NewLogoPdC.png";
 export const Header = () => {
   return (
     <>
-      <div className="flex  w-full h-[550px] overflow-hidden ">
+      <div className="flex  w-full h-[800px] overflow-hidden ">
 
         <div className="relative w-screen h-full z-0 -top-25">
           <video
@@ -16,7 +16,7 @@ export const Header = () => {
           />
         </div>
 
-        <div className="absolute flex items-center justify-center w-full h-[550px] z-10  object-cover ">
+        <div className="absolute flex items-center justify-center w-full h-[800px] z-10  object-cover ">
           <Image src={logo} alt="Logo" width={500} height={500} />
         </div>
 
