@@ -29,7 +29,7 @@ export const Carrousel = () => {
 
   return (
    
-      <div className="bg-gray-100 pb-10 h-500px">
+      <>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -75,7 +75,7 @@ export const Carrousel = () => {
         </SwiperSlide>
           
           </Swiper>
-      </div>
+      </>
 
   );
 };
