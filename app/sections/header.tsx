@@ -12,7 +12,7 @@ export const Header = () => {
             autoPlay
             loop
             muted
-            className="w-screen justify-center object-cover h-250"
+            className="w-screen justify-center object-cover h-250 "
           />
         </div>
 
