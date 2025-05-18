@@ -5,7 +5,7 @@ import React from "react";
 export const Header = () => {
   return (
     <>
-      <div className="flex  w-full h-[720px] overflow-hidden ">
+      <div className="flex  w-full h-[800px] overflow-hidden ">
         <div className="relative w-screen h-full z-0 -top-25">
           <video
             width="1000"

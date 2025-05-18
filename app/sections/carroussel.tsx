@@ -11,53 +11,47 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import h1img from "@/public/image/imgCarrousel/h01.jpg";
 import h2img from "@/public/image/imgCarrousel/h03.jpg";
+import h3img from "@/public/image/imgCarrousel/h05.jpg";
+import h4img from "@/public/image/imgCarrousel/h04.jpg";
 import "../globals.css";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export const Carrousel = () => {
-  const imagens = [
-   h1img,
-   h2img
-  ];
+  const imagens = [h1img, h2img, h3img, h4img];
 
-   const pagination = {
+  const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '">' + '</span>';
+      return '<span class="' + className + '">' + "</span>";
     },
   };
 
   return (
-   
-      <>
-          <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
-            }}
-            pagination={pagination}
-            modules={[EffectCoverflow, Pagination]}
-            className="mySwiper"
-          >
-        
-               {imagens.map((imagem, index) => (
-              <SwiperSlide key={index}>
-                <Image src={imagem} alt="" />
-              </SwiperSlide>
-            ))}
-          
-          
-          </Swiper>
-      </>
-
+    <>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        pagination={pagination}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        {imagens.map((imagem, index) => (
+          <SwiperSlide key={index}>
+            <Image src={imagem} alt="" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
