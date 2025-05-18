@@ -20,31 +20,40 @@ export const Carrousel = () => {
     "/image/imgCarrousel/h04.jpg",
   ];
 
+   const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '">' + '</span>';
+    },
+  };
+
   return (
-    <>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        {imagens.map((imagem, index) => (
-          <SwiperSlide key={index}>
-            <img src={imagem} />
-          </SwiperSlide>
-        ))}
-       
-      </Swiper>
-    </>
+   
+      <div className="bg-gray-100 flex items-center justify-center w-screen h-[500px] mx-auto mt-5">
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            pagination={pagination}
+            modules={[EffectCoverflow, Pagination]}
+            className="mySwiper"
+          >
+            {imagens.map((imagem, index) => (
+              <SwiperSlide key={index}>
+                <img src={imagem} />
+              </SwiperSlide>
+            ))}
+          
+          </Swiper>
+      </div>
+
   );
 };

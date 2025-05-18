@@ -14,7 +14,7 @@ export default function Home() {
           🍔🔥 Bem-vindo ao Point do Canal – O Sabor que Conquista!
         </div>
 
-        <div className="p-8  flex  w-screen text-2xl text-center text-gray-600 w-screen  max-w-[1200px]">
+        <div className="p-8 -mt-8 flex  w-screen text-2xl text-center text-gray-600 w-screen  max-w-[1200px]">
           Se você busca hambúrgueres suculentos com pão de fabricação própria,
           pastéis crocantes, caldos irresistíveis e aquele açaí cremoso para
           refrescar o dia, você está no lugar certo! 😍 Aqui, cada detalhe faz a
