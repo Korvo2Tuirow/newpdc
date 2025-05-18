@@ -27,6 +27,7 @@ export const Carrousel = () => {
       return '<span class="' + className + '">' + "</span>";
     },
   };
+  
 
   return (
     <>
