@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 .swiper {
-  width: 350px;
+  width: 1200px;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide {
