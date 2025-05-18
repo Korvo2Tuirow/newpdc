@@ -15,7 +15,9 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 300px;
+  height: 300px;
+    object-fit: cover;
 }
 
 .swiper-pagination-bullet {
