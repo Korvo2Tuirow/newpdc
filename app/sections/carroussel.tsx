@@ -43,7 +43,7 @@ export const Carrousel = () => {
           modifier: 1,
           slideShadows: false,
         }}
-        pagination={pagination}
+        pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >

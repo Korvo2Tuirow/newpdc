@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+html,
 body {
   position: relative;
   height: 100%;
@@ -14,14 +15,10 @@ body {
   padding: 0;
 }
 
-
 .swiper {
-  width: 1200px;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide {
@@ -33,7 +30,7 @@ body {
 
 .swiper-slide img {
   display: block;
-  width: 300px;
+  width: 100%;
 }
 
 
