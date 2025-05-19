@@ -4,16 +4,17 @@ import { useState } from 'react';
 
 
 import Image from "next/image";
-import h1img from "@/public/image/imgCarrousel/h01.jpg";
+
 import h2img from "@/public/image/imgCarrousel/h03.jpg";
-import h3img from "@/public/image/imgCarrousel/h05.jpg";
-import h4img from "@/public/image/imgCarrousel/h04.jpg";
+import h4img from "@/public/image/imgCarrousel/hamb01.jpg";
+import h5img from"@/public/image/imgCarrousel/hamb02.jpg"
+import comb01 from "@/public/image/imgCarrousel/combo01.jpg";
  
 
 
 export const Carrousel =() => {
   const [activeIndex, setActiveIndex] = useState(2); // Começa no meio
-  const imagens = [h1img, h2img, h3img, h4img, h1img, h2img, h3img, h4img ];
+  const imagens = [  comb01, h4img, h5img, h2img]; 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1));
   };
@@ -21,6 +22,7 @@ export const Carrousel =() => {
   const handleNext = () => {
     setActiveIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
   };
+
 
   return (
     <div className="w-full flex flex-col items-center justify-center bg-gray-300 py-10">

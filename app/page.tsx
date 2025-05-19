@@ -4,6 +4,7 @@ import React from "react";
 import { Header } from "./sections/header";
 
 import { Carrousel } from "./sections/carrousel";
+import { Comments } from "./sections/comments";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
       </div>
 
       <Carrousel />
+
+      <Comments/>
     </>
   );
 }
