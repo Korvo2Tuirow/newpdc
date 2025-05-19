@@ -3,7 +3,7 @@ import React from "react";
 
 import { Header } from "./sections/header";
 
-import { Carrousel } from "./sections/carroussel";
+import { Carrousel } from "./sections/carrousel";
 
 export default function Home() {
   return (
