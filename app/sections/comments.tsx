@@ -14,7 +14,7 @@ export const Comments = () => {
 
   return (
 
-    <div className="bg-white rounded-lg mb-24 p-5  mt-10 justify-center items-center flex flex-col w-screean">
+    <div className="bg-white rounded-lg mb-10 p-5  mt-10 justify-center items-center flex flex-col w-screean">
       <h2 className="flex w-screen max-w-[1000px] justify-center text-gray-500 font-bold text-2xl pb-10 border-b border-gray-400  ">Avaliações no Ifood </h2>
     
      
