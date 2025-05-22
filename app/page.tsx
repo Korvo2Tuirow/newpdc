@@ -1,22 +1,23 @@
 "use client";
 import React from "react";
 
-import { Header } from "./sections/header";
+import { Banner } from "./sections/banner";
 
 import { Carrousel } from "./sections/carrousel";
 import { Comments } from "./sections/comments";
 import { WelcomeBanner } from "./sections/welcomeBanner";
+import { NavBar } from "./sections/navBar";
+import { Delivery } from "./sections/delivery";
 
 export default function Home() {
   return (
     <>
-      <Header /> 
-
-      <WelcomeBanner />  
-
+      <Banner />
+      <WelcomeBanner />
       <Carrousel />
+      <Comments />
 
-      <Comments/>
+      <Delivery />
     </>
   );
 }
