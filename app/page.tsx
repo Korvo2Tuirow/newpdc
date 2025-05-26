@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 
 import { Banner } from "./sections/banner";
@@ -16,7 +16,6 @@ export default function Home() {
       <WelcomeBanner />
       <Carrousel />
       <Comments />
-
       <Delivery />
     </>
   );

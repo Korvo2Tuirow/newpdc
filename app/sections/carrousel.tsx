@@ -8,12 +8,16 @@ import h2img from "@/public/image/imgCarrousel/h03.jpg";
 import h4img from "@/public/image/imgCarrousel/hamb01.jpg";
 import h5img from "@/public/image/imgCarrousel/hamb02.jpg";
 import comb01 from "@/public/image/imgCarrousel/combo01.jpg";
+import image01 from "@/public/image/imgCarrousel/imagem01.jpg";
+import image02 from "@/public/image/imgCarrousel/imagem02.jpg";
+import image03 from "@/public/image/imgCarrousel/imagem03.jpg";
+import image04 from "@/public/image/imgCarrousel/imagem04.jpg";
 
 export const Carrousel = () => {
   const [activeIndex, setActiveIndex] = useState(2); // Começa no meio
   const startX = useRef<number | null>(null);
 
-  const imagens = [comb01, h4img, h5img, h2img];
+  const imagens = [comb01, h4img, h5img, h2img, image01, image02, image03, image04];
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1));

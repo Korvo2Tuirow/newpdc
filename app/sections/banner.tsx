@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo from "@/public/image/logo/NewLogoPdC.png";
 import React from "react";
 import { NavBar } from "./navBar";
-import bannerImg from "@/public/image/bannerImg01.jpg";
+import bannerImg from "@/public/image/banner/bannerImg01.jpg";
 export const Banner = () => {
   return (
     <>
