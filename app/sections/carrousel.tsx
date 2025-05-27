@@ -62,7 +62,7 @@ export const Carrousel = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-gradient-to-b from-blue-500 to-purple-500 py-10">
+    <div className="w-full flex flex-col items-center justify-center bg-gradient-to-b from-blue-500 py-10">
       <div
         className="relative w-screen max-w-[1000px] h-110 flex items-center justify-center overflow-hidden"
         onTouchStart={handleTouchStart}

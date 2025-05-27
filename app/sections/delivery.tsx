@@ -4,10 +4,10 @@ import ifood from "@/public/image/delivery/logo-smile.png";
 import whatsapp from "@/public/image/delivery/logo-whatsapp.png";
 import Link from "next/link";
 
-
+// bg-gradient-to-t from-blue-500 to-purple-500
 export const Delivery = () => {
   return (
-    <div className="flex  justify-center items-center py-10 bg-gradient-to-t from-blue-500 to-purple-500 overflow-hidden">
+    <div className="flex  justify-center items-center py-10 bg-gradient-to-t from-blue-500  overflow-hidden">
       <div className="lg:flex  items-center justify-center   max-w-[1000px] h-full ">
         <div>
           <div className="flex items-center justify-center text-4xl font-bold text-center text-white p-5 text-shadow-black text-shadow-lg/70 font-bold">
