@@ -10,7 +10,7 @@ export const Delivery = () => {
     <div className="flex  justify-center items-center py-10 bg-gradient-to-t from-blue-500  overflow-hidden">
       <div className="lg:flex  items-center justify-center   max-w-[1000px] h-full ">
         <div>
-          <div className="flex items-center justify-center text-4xl font-bold text-center text-white p-5 text-shadow-black text-shadow-lg/70 font-bold">
+          <div className="flex items-center justify-center text-4xl font-bold text-center text-white p-5 text-shadow-black text-shadow-lg/50 font-bold">
             FAÇA JÁ O SEU PEDIDO E RECEBA NO CONFORTO DO SEU LAR
           </div>
 
